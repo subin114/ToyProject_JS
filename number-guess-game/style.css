@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#wrap {
+  width: 400px;
+  height: 250px;
+  padding: 30px 0px;
+  background-color: #C1DCA2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px #6e6e6e3b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+}
+
+#result-area, #chance-area {
+  text-align: center;
+}
+
+#chance-area {
+  font-weight: bold;
+  color: #649C25;
+}
+
+.user {
+  width: 330px;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  padding: 9px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #96b37354;
+}
+
+button {
+  width: 65px;
+  padding: 10px;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px #96b37354;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:nth-of-type(1) {
+  background-color: #ebf7bd;
+}
+
+button:nth-of-type(1):hover {
+  background-color: #D9E6A5;
+}
+
+button:nth-of-type(1):disabled:hover {
+  background-color: #ebf7bd; /* hover 효과가 없도록 유지 */
+}
+
+button:nth-of-type(2) {
+  background-color: #eee;
+}
+
+button:nth-of-type(2):hover {
+  background-color: #d8d8d8;
+}
