@@ -1,3 +1,5 @@
+🔗[sb-number-guess-game.netlify.app/](sb-number-guess-game.netlify.app/)
+
 <p align="center">
   <img src="images/toyProject01.PNG" alt="프로젝트 이미지">
 </p>
