@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'SUIT-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ghostwhite;
+}
+
+.container {
+  width: 40em;
+  height: 50em;
+  padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 25px;
+  background-color: white;
+  overflow: hidden;
+}
+
+h1 {
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  font-size: 27px;
+  font-weight: bold;
+  font-family: 'SUIT-Regular';
+  color: #fff;
+  border-radius: 25px 25px 0px 0px;
+  background: linear-gradient(118deg, rgba(251,204,93,1) 0%, rgba(240,106,164,1) 42%, rgba(233,72,209,1) 69%, rgba(186,48,236,1) 100%);
+}
+
+/* -------------- input section -------------- */
+.input-area {
+  margin: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  width: 92%;
+  padding: 0px 20px;
+  margin-right: 10px;
+  font-family: 'SUIT-Regular';
+  border: 0;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+}
+
+#add-btn {
+  padding: 7px 12px;
+  background-color: #f5f5f5;
+  border-radius: 25px;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.07) 1px 1px 1px;
+}
+
+/* -------------- list section -------------- */
+/* tabs + board */
+.task-area {
+  border-top: 1px solid #eee;
+}
+
+/* tabs */
+.task-tabs {
+  display: flex;
+  position: relative;
+  margin-bottom: 22px;
+  padding-left: 25px;
+  font-family: 'SUIT-Regular';
+  border-bottom: 1px solid #eee;
+}
+
+.task-tabs div {
+  padding: 0.6rem 1.3rem;
+  cursor: pointer;
+}
+
+#task-board {
+  overflow-y: auto;
+  max-height: 555px;
+}
+
+/* scrollBar custom */
+#task-board::-webkit-scrollbar {
+  width: 10px;  /* 스크롤바의 너비 */
+}
+
+#task-board::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+  background: #ddd; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+
+#task-board::-webkit-scrollbar-track {
+  background: #f2f2f2;  /*스크롤바 뒷 배경 색상*/
+  border-radius: 10px;
+}
+
+/* --- JS code CSS Start --- */
+.task-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 25px;
+  margin-bottom: 22px;
+}
+
+/* list */
+.task {
+  padding: 0.5rem;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #eee;
+  width: 82%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 2px;
+  font-family: 'SUIT-Regular';
+}
+
+.task-done {
+  text-decoration: line-through;
+  color: #bbb;
+  box-shadow: none;
+  background-color: transparent;
+  border-bottom: 1px solid #eee;
+  border-radius: 0;
+}
+
+.btn-wrap {
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn-wrap button {
+  padding: 5px 14px;
+  font-size: 14px;
+  border: 0;
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+.btn-wrap button:nth-of-type(1) {
+  color: rgb(138, 197, 20);
+}
+
+.btn-wrap button:nth-of-type(2) {
+  color: rgb(255, 104, 84);
+}
+/* --- JS code CSS End --- */
+
+/* menu slide animation */
+#under-line {
+  width: 70px;
+  height: 3px;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: 25px;
+  background-color: rgb(248, 89, 155);
+  border-radius: 5px;
+  transition: 0.35s;
+}
