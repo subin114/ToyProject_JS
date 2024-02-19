@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/************************* section 01 *************************/
+/* title */
+.title {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.title svg {
+  width: 430px;
+}
+
+/* menus */
+.menus {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 4px double #000;
+}
+
+.menus button {
+  border: none;
+  background: none;
+  margin: 5px;
+}
+
+.menus button:hover {
+  background-color: beige;
+}
+
+/************************* section 02 *************************/
+.news {
+  border-bottom: 2px solid #000;
+}
+
+.news-img {
+  max-width: 100%;
+}
+
+/********************* search & side menu *********************/
+.icon-wrap {
+  margin-top: 10px;
+  padding: 10px 0px;
+}
+
+.icon-btn {
+  cursor: pointer;
+}
+
+/* search */
+#input-area {
+  display: none;
+}
+
+#search-input {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.search-btn {
+  border: none;
+  background-color: slategrey;
+  padding: 1px 10px;
+  border-radius: 5px;
+  color: aliceblue;
+}
+
+/** side menu */
+.side {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: slategrey;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.hide {
+  display: none;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  border: none;
+  background: none;
+}
+
+.side-menus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-menus button {
+  margin: 5px;
+  border: none;
+  background: none;
+  width: 120px;
+}
+
+.side-menus button:hover {
+  background-color: beige;
+  border-radius: 3px;
+}
+
+/* 600px 이하인 경우 */
+@media (max-width: 600px) {
+  .hide {
+    display: inline;
+  }
+}
+
+/************************* pagination *************************/
+.center {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.center nav ul {
+  margin: 0;
+  cursor: pointer;
+}
+
+.center nav li a {
+  color: #333;
+}
+
+.active > .page-link, .page-link.active {
+  background-color: slategrey;
+  border-color: slategrey;
+}
